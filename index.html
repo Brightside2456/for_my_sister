@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday to my sister!</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            position: relative;
+            background-image: url("./IMG-20220131-WA0004.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        .confetti {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .confetti-piece {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: hsla(0, 100%, 50%, 0.5);
+            animation: confetti-fall 10s linear infinite;
+        }
+
+        @keyframes confetti-fall {
+            0% {
+                top: 0;
+                left: random(0, 100vw);
+            }
+            100% {
+                top: 100vh;
+                left: random(0, 100vw);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="confetti">
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <!-- 
+        Add more confetti-piece elements here to increase the amount of confetti
+        -->
+    </div>
+
+    <h1>Happy Birthday to my sister, Emelia Sefah!</h1>
+    <img src="./kortnee-greenfield-d9ystsaiOW8-unsplash.jpg">
+    <img src="./Snapchat-354088949.jpg"
+    style="
+    width: 250px;
+    height: 300px;
+    border-radius: 50%;
+
+    "
+    >
+    
+
+    <p>.</p>
+    <p>May God bless you.</p>
+    <p>.</p>
+
+    <script>
+        function random(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+    </script>
+</body>
+</html>
